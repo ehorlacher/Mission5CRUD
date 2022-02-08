@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Podcasts">My Podcasts</a>
+        <a asp-controller="Home" asp-action="MovieInput">Movie Input</a>
+        <a asp-controller="Home" asp-action="MovieList">Movie List</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="/lib/jquery/jquery-3.6.0.min.js"></script> -->
+
+
+</body>
+<footer>
+    <br />
+    This is a footer
+    <br />
+    <br />
+</footer>
+
+</html>
